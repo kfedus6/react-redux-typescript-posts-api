@@ -1,0 +1,60 @@
+body {
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: rgb(154, 209, 219);
+}
+
+#root {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.app {
+   width:900px;
+}
+
+.post {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5px 15px;
+   margin-top: 10px;
+   border: 2px solid black;
+}
+
+.post__content {
+   width: 700px;
+}
+
+.post__btn button {
+   padding: 5px 15px;
+   background: transparent;
+   color: black;
+border: 1px solid black;
+cursor: pointer;
+font-size: 14px;
+}
+
+.loader {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   border: 3px dashed teal;
+   animation: rotate 4s infinite linear;
+}
+
+@keyframes rotate {
+   from {
+      transform: rotate(0deg) scale(1);
+   }
+   to {
+      transform: rotate(360deg) scale(1.4);
+   }
+}
+
+.loader__block {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 150px;
+}
